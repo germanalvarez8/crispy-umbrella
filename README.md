@@ -1,45 +1,54 @@
-# API REST de Usuarios
+# crispy-umbrella
 
-Esta API permite gestionar una lista de usuarios utilizando Node.js y Express, con persistencia en disco usando un archivo JSON.
+Este repositorio contiene dos proyectos independientes: un **backend** (API REST en Node.js/Express) y un **frontend** (React + Vite).
 
-## Instalación
+---
 
-1. Clona el repositorio o descarga el código.
+## Requisitos previos
+
+- [Node.js](https://nodejs.org/) (v18 o superior recomendado)
+- [npm](https://www.npmjs.com/)
+
+---
+
+## Inicialización del Backend
+
+1. Abre una terminal y navega a la carpeta `backend`:
+   ```bash
+   cd backend
+   ```
 2. Instala las dependencias:
    ```bash
    npm install
    ```
-3. Inicia el servidor:
-   ```bash
-   npm start
-   ```
-   O en modo desarrollo (con recarga automática):
+3. Inicia el servidor en modo desarrollo:
    ```bash
    npm run dev
    ```
+   El backend quedará disponible en [http://localhost:3000](http://localhost:3000).
 
-## Rutas disponibles
+---
 
-- **GET /usuarios**
-  - Devuelve el listado completo de usuarios.
+## Inicialización del Frontend
 
-- **GET /usuarios/:id**
-  - Devuelve un usuario por su ID.
-  - Si no se encuentra, devuelve error 404.
+1. Abre otra terminal y navega a la carpeta `frontend`:
+   ```bash
+   cd frontend
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia la aplicación React en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+   El frontend estará disponible en la URL que indique la terminal (por defecto [http://localhost:5173](http://localhost:5173)).
 
-- **POST /usuarios**
-  - Crea un nuevo usuario.
-  - Requiere en el body: `name`, `email`, `age`, `gender`.
-  - El email no puede estar vacío ni repetido.
-
-- **PUT /usuarios/:id**
-  - Actualiza los datos de un usuario existente.
-  - Valida que el usuario exista y que el email no esté repetido.
-
-- **DELETE /usuarios/:id**
-  - Elimina un usuario por ID.
-  - Devuelve mensaje de confirmación.
+---
 
 ## Notas
-- Los usuarios se almacenan en el archivo `db/users.json`.
-- Asegúrate de que la carpeta `db` y el archivo `users.json` existan y tengan permisos de escritura.
+
+- El frontend espera que el backend esté corriendo en `http://localhost:3000`.
+- Asegúrate de que las carpetas `backend/db` y los archivos `.json` existan y tengan permisos de escritura.
+- Puedes modificar las rutas y puertos según tus necesidades en los archivos de configuración correspondientes.

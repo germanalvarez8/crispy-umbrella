@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "name": "Monitor Samsung 24\"",
+    "price": 180,
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "name": "Teclado Mecánico Redragon",
+    "price": 60,
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "name": "Celular Xiaomi",
+    "price": "150",
+    "stock": "15"
+  }
+]
