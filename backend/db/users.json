@@ -1,12 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "John Doe",
-    "email": "johndoe@example.com",
-    "age": 28,
-    "gender": "male"
-  },
-  {
     "id": 2,
     "name": "Jane Smith",
     "email": "janesmith@example.com",
@@ -19,5 +12,12 @@
     "email": "carlos.alvarez@example.com",
     "age": 25,
     "gender": "male"
+  },
+  {
+    "id": 3,
+    "name": "Personita",
+    "email": "perso@nita",
+    "age": "22",
+    "gender": "gei"
   }
 ]
