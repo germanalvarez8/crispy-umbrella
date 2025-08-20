@@ -8,8 +8,8 @@ const {
     updateProduct,
     deleteProduct
 } = require('../controllers/products.controller')
-// const verifyToken = require('../middlewares/verifyToken')
-// const isAdmin = require('../middlewares/isAdmin')
+const verifyToken = require('../middlewares/verifyToken')
+const isAdmin = require('../middlewares/isAdmin')
 
 router.get('/', getAllProducts);
 router.get('/:id', getProductById);
